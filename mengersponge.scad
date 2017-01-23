@@ -3,10 +3,10 @@
  * @brief Creates a menger sponge with specified size and depth
  */
 size = 10;
-dpth = 2;
+dpth = 3;
 difference() {
     cube(size, center=true);
-    spongeit(cl[0], size / 3, dpth);
+    spongeit([0,0,0], size / 3, dpth);
 }
 
 module spongeit(pos, size, depth) {
