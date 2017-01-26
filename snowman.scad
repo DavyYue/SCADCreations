@@ -1,5 +1,10 @@
+/**
+ * @author Roboita
+ * @brief 3-part Snowman w/ eyes, nose, buttons, arms
+ */
+
 scale=10;
-res=20;
+res=40; // Resolution on spheres and cylinders, raise to raise roundness
 // "Raisin black"
 black=[33/255,33/255,36/255];
 white="ivory";
@@ -84,7 +89,7 @@ translate([0,0,scale])
                 sphere(r=scale/40,$fn=res);                
             }
             
-            // Speech Bubble
+            // Speech Bubble, optional
             /*translate([-scale,0,0])
             {
                 // Box
@@ -96,7 +101,7 @@ translate([0,0,scale])
                 color("royalblue")
                 rotate([90,0,180])
                 translate([-scale/2.5,0,0])
-                text("eecsmasterrace amirite m80s",valign="center",font="Comic Sans MS",size=1);
+                text("SAMPLE TEXT",valign="center",font="Comic Sans MS",size=1);
                 
             }*/
         }
