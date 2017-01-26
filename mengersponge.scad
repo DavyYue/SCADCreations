@@ -2,7 +2,7 @@
  * @author Robotia
  * @brief Creates a menger sponge with specified size and depth
  */
-dpth = 3;
+dpth = 4;
 size = pow(3, dpth);
 
 spongeit([0,0,0], size / 3, dpth);
